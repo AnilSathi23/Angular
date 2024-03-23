@@ -1,0 +1,20 @@
+<H1>This is the Angular Pipe Demo</H1>
+<p>{{x | date: 'YYYY-MM-dd h:mm:ss a'}}</p>
+
+<div class="container">
+  <h1> Student Information</h1>
+  <table>
+    <tr>
+      <th>Student Id</th>
+      <th>Student Name</th>
+      <th>Gender</th>
+    </tr>
+    @for(student of students; track student.studentId){
+      <tr>
+        <td>{{student.studentId}}</td>
+        <td>{{student.name}}</td>
+        <td>{{student.gender | hello}}</td>
+      </tr>
+    }
+  </table>
+</div>

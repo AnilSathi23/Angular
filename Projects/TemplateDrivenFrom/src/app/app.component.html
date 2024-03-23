@@ -1,0 +1,33 @@
+<h1>Template Driven From</h1>
+<div class="container">
+  <div class="row">
+  <div class="From-bg">
+    <form #studentForm="ngForm" (ngSubmit)="RegisterStudent(studentForm)">
+      <div>
+        <h1>Student Registration</h1>
+      </div>
+      <div>
+        <label for="firstName">First Name</label>
+        <input id="firstName" type="text" class="form-control" 
+        name="firstName" ngModel />
+      </div>
+
+      <div>
+        <label for="lastName">Last Name</label>
+        <input id="lastName" type="text" class="form-control"
+        name="LastName" ngModel />
+      </div>
+
+      <div>
+        <label for="emailAddress">Email Address</label>
+        <input id="emailAddress" type="text" class="form-control" 
+        name="emailAddress" ngModel />
+      </div>
+
+      <div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
